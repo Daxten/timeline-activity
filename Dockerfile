@@ -8,4 +8,4 @@ RUN apt-get update \
 
 EXPOSE 8040
 
-CMD ["/data/activitytimeline/bin/startup.sh", "", ""]
+CMD /data/activitytimeline/bin/startup.sh && tail -F /data/activitytimeline/logs/catalina.out
